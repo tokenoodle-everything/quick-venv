@@ -68,7 +68,7 @@ a couple of seconds.
     python-version: "3.13"
     dest: ".venv"
     requirements: requirements.txt requirements-dev.txt
-    tn-venv-install: "git+https://github.com/tokenoodle-everything/tn-venv@main"
+    tn-venv-install: "git+https://github.com/tokenoodle-everything/tn-venv@master"
     tn-venv-args: "--upgrade-pip"
 
 - run: ${{ steps.venv.outputs.python-path }} -m pytest
